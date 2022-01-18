@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestClimbingStars(t *testing.T) {
+func TestClimbingStairs(t *testing.T) {
 	t.Run("edge case #1", func(t *testing.T) {
 		ans := climbingStairs(0)
 		assert.Equal(t, 1, ans)

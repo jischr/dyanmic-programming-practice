@@ -11,7 +11,6 @@ Recurrance relation: F(n) = f(n-2) + f(n-1)
 Base cases:
 - F(0) = 1
 - F(1) = 1
-- F(2) = 2
 */
 
 // time complexity = O(n)

@@ -13,6 +13,9 @@ Base cases:
 - F(1) = 1
 - F(2) = 2
 */
+
+// time complexity = O(n)
+// space complexity = O(n)
 func climbingStairs(n int) int {
 	dp := make([]int, n+1)
 	dp[0] = 1

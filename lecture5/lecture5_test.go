@@ -49,4 +49,8 @@ func TestClimbingKStairs(t *testing.T) {
 		ans := climbingKStairs(5, 3)
 		assert.Equal(t, 13, ans)
 	})
+	t.Run("when n is 8", func(t *testing.T) {
+		ans := climbingKStairs(8, 4)
+		assert.Equal(t, 108, ans)
+	})
 }

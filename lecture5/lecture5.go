@@ -65,19 +65,21 @@ func climbingStairs(n int) int {
 	return b
 }
 
-// time complexity O(nk)
+// time complexity O(k)
 // space complextiy O(n)
 func climbingKStairs(n, k int) int {
-	dp := make([]int, n+1)
+	dp := make([]int, k)
 	dp[0] = 1
 	dp[1] = 1
+
 	for i := 2; i <= n; i++ {
-		for j := 1; j <= k; j++ {
+		for j := 1; j < k; j++ {
 			if i-j < 0 {
 				continue
 			}
-			dp[i] += dp[i-j]
+
+			dp[i%k] += dp[(i-j)%k]
 		}
 	}
-	return dp[n]
+	return dp[n%k]
 }
